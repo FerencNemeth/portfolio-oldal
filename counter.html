@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        Ez egy cikk lesz, amibe bele lehet kattintatni.
+    </article>
+    <article class = "js-article-counter" data-klikk = "0" >
+<h1 > Cím </h1 >
+<p > Lorem ipsum dolor sit amet. </p >
+</article >
+<script type = "text/javascript" >
+const elem = document.querySelector( '.js-article-counter' );
+function clicked() {
+const korábbiÉrték = Number.parseInt( elem.dataset.klikk, 10 );
+elem.dataset.klikk = korábbiÉrték + 1 ;
+}
+elem.addEventListener
+< article class = "js-article-counter" data-klikk = "0" >
+< h1 > Cím </ h1 >
+< p > Lorem ipsum dolor sit amet. </ p >
+</ article >
+< script type = "text/javascript" >
+const elem = document.querySelector( '.js-article-counter' );
+function clicked() {
+const korábbiÉrték = Number.parseInt( elem.dataset.klikk, 10 );
+elem.dataset.klikk = korábbiÉrték + 1 ;
+}
+elem.addEventListener( 'click' , clicked );
+</ script >
+</body>
+</html>
