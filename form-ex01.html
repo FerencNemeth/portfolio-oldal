@@ -7,6 +7,7 @@
     <title>Form exercise 001</title>
 </head>
 <body>
+    <!-- Beküldhető űrlap --> 
     <h1>Űrlap</h1>
     <form action="https://formspree.io/xvowrlob" method="POST">
        <label >
@@ -26,6 +27,52 @@
         </div>
         </label>
     </form>
+
+
+<!--Select mező-->
+<br/>
+<br/>
+    Mennyire érthető az űrlap?
+    <select name = "nehézségi-szint" >
+        <option value = "0" > Könnyű </option >
+        <option value = "1" > Közepes </option >
+        <option value = "2" > Nehéz </option >
+    </select >
+    
+<!--Többsoros beviteli mező: textarea-->
+<br/>
+<br/>
+    <label >
+        Üzenet:
+        <textarea name = "üzenet" > Kezdeti érték </textarea >
+    </label >
+
+<!--Rádió gombok-->
+<br/>
+<br/>
+    <label >
+        <input type = "radio" name = "nehézségi-szint" value = "0" >
+        Könnyű
+    </label >
+    <label >
+        <input type = "radio" name = "nehézségi-szint" value = "1" >
+        Közepes
+    </label >
+    <label >
+        <input type = "radio" name = "nehézségi-szint" value = "2" >
+        Nehéz
+    </label >
+
+<!--Checkboxok kétféle megoldása-->
+<br/>
+<br/>
+    <label >
+        <input type = "checkbox" name = "desszert" value = "igen" >
+        Desszertet kérek
+    </label >
+
+    <input type = "checkbox" name = "eloetel" value = "igen" id = "előétel-rendelés" >
+    <label for = "előétel-rendelés" > Előételt kérek </ label >
 
 </body>
 </html>
